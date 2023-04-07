@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class AlteraPreco {
+public class Main {
     // Função alteraPreco
     // Desc: modifica o preço de um *produto*
     // Entrada:
     //    preco: preço do produto
-    //    porcentagem: valor percentual a ser alterado, podendo 
+    //    porcentagem: valor percentual a ser alterado, podendo
     //    ser negativo para diminuir valores
     // Retorno:
     //    0 - sucesso
@@ -14,7 +14,7 @@ public class AlteraPreco {
         float temp;
 
         if (porcentagem > -100) {
-            temp = 1 + porcentagem/100; // 10 >>> 1 + 10/100 = 1.1  ;; -5  =>> 1 + (-5/100) 0.95 
+            temp = 1 + porcentagem/100; // 10 >>> 1 + 10/100 = 1.1  ;; -5  =>> 1 + (-5/100) 0.95
             for (int i = 0; i < preco.length; i++) {
                 preco[i] = preco[i] * temp; // preço modificado
             }
